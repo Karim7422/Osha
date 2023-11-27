@@ -4,13 +4,704 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Occupational Safety and Health Administration</title>
+    <link rel="shortcut icon" href="./Images/fbbc8595-61d4-47b6-af7f-870d24eff88a.jpg" type="image/x-icon">
+    <!-- !CSS Files -->
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <!-- !Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- !Alert -->
+    <div class="offcanvas offcanvas-top   bg-cyan  show" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header text-center">
+            <button type="button" class="btn-close ms-auto "  data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center fw-bolder fs-2">
+            Welcome To OSHA
+        </div>
+    </div>
+    <!-- !-----------------------------------Header Start--------------------------->
+    <header>
+        <div class="header-top">
+            <div class=" container-fluid  py-1 d-flex align-items-center justify-content-center  gap-4">
+                <div class="d-flex flex-column flex-sm-row gap-2 ">
+                    <a class="btn" href="#"> To book the course - لحجز الكورس </a>
+                    <a class="btn" href="#">To pay - للدفع </a>
+                    <a class="btn" href="">For inquiries about the certificate number</a>
+                    <a class="btn" href="#">Learning Partner Login</a>
+                </div>
+                <div class="search-box d-none d-lg-flex ">
+                    <input type="text" placeholder="What are you looking for ...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- !--------------Navbar For Large Screens---------------->
+        <nav class="navbar d-none d-lg-flex navbar-expand-lg">
+            <div class="container ">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="w-100" src="./Images/fbbc8595-61d4-47b6-af7f-870d24eff88a.jpg" alt="Logo">
+                </a>
+                <div class="d-flex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center mx-auto mb-2 mb-lg-0 gap-3 main-font fw-bold">
+                        <div class="d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2 fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    OSHA
+                                </a>
+                                <ul class="dropdown-menu d-none m-0">
+                                    <li class="dropdown-item fw-bolder">OSHA</li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">About OSHA</a></li>
+                                    <li><a class="dropdown-item" href="#">Find an OSHA Office</a></li>
+                                    <li><a class="dropdown-item" href="#">State Plans</a></li>
+                                    <li><a class="dropdown-item" href="#">Job Safety and Health Poster</a></li>
+                                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                                    <li><a class="dropdown-item" href="#">Freedom of Information Act</a></li>
+                                    <li><a class="dropdown-item" href="#">Speaker Requests</a></li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2 fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    STANDARDS
+                                </a>
+                                <ul class="dropdown-menu d-none  m-0">
+                                    <li class="dropdown-item fw-bolder">Standards</li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Law and Regulations</a></li>
+                                    <li><a class="dropdown-item" href="#">Federal Register</a></li>
+                                    <li><a class="dropdown-item" href="#">Open for Comment</a></li>
+                                    <li><a class="dropdown-item" href="#">Regulatory Agenda</a></li>
+                                    <li><a class="dropdown-item" href="#">Standard Interpretations</a></li>
+                                    <li><a class="dropdown-item" href="#">Training Requirements by Standard</a></li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2 fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    ENFORCEMENT
+                                </a>
+                                <ul class="dropdown-menu d-none  m-0">
+                                    <li class="dropdown-item fw-bolder">Enforcement</li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">OSHA Enforcement</a></li>
+                                    <li><a class="dropdown-item" href="#">Annual Inspection Data</a></li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2 fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    TOPICS
+                                </a>
+                                <ul class="dropdown-menu spicial-dropdown d-none   m-0">
+                                    <li>
+                                        <ul>
+                                            <li class="dropdown-item fw-bolder"> Topics</li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">For Employers</a></li>
+                                            <li><a class="dropdown-item" href="#">Worker Rights</a></li>
+                                            <li><a class="dropdown-item" href="#">Fall Prevention</a></li>
+                                            <li><a class="dropdown-item" href="#">Hazard Communication</a></li>
+                                            <li><a class="dropdown-item" href="#">Heat</a></li>
+                                            <li><a class="dropdown-item" href="#">Personal Protective Equipment</a></li>
+                                            <li><a class="dropdown-item" href="#">Suicide Prevention</a></li>
+                                            <li><a class="dropdown-item" href="#">Trenching and Excavation</a></li>
+                                            <li><a class="dropdown-item" href="#">Workers Memorial</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="dropdown-item fw-bolder"> By Sector</li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Agriculture</a></li>
+                                            <li><a class="dropdown-item" href="#">Construction</a></li>
+                                            <li><a class="dropdown-item" href="#">Federal Agencies</a></li>
+                                            <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                            <li><a class="dropdown-item" href="#">Maritime</a></li>
+                                            <li><a class="dropdown-item" href="#">Oil and Gas</a></li>
+                                            <li><a class="dropdown-item" href="#">Warehousing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="dropdown-item fw-bolder"> Key Topics</li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Recordkeeping Requirements and
+                                                    Forms</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Safety and Health Programs</a></li>
+                                            <li><a class="dropdown-item" href="#">Support After a Loss</a></li>
+                                            <li><a class="dropdown-item" href="#">Whistleblower Protections</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2 fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    HELP AND RESOURCES
+                                </a>
+                                <ul class="dropdown-menu spicial-dropdown d-none   m-0">
+                                    <li>
+                                        <ul>
+                                            <li class="dropdown-item fw-bolder"> Help and Resources</li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Data</a></li>
+                                            <li><a class="dropdown-item" href="#">Establishment Search</a></li>
+                                            <li><a class="dropdown-item" href="#">Fatality Reports</a></li>
+                                            <li><a class="dropdown-item" href="#">File a Complaint</a></li>
+                                            <li><a class="dropdown-item" href="#">Publications</a></li>
+                                            <li><a class="dropdown-item" href="#">Safety and Health Topics Pages</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Videos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="dropdown-item fw-bolder">Compliance Assistance</li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Compliance Assistance Specialists</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Consultation Services</a></li>
+                                            <li><a class="dropdown-item" href="#">Cooperative Programs</a></li>
+                                            <li><a class="dropdown-item" href="#">Small Business Resources</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li class="dropdown-item fw-bolder">Training</li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Training Requirements and
+                                                    Resources</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Outreach Training Program (10- and
+                                                    30-hour
+                                                    Cards)</a></li>
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">Find a Trainer</a></li>
+                                                <li><a class="dropdown-item" href="#">Replace a Card</a></li>
+                                                <li><a class="dropdown-item" href="#">Avoid Card Fraud</a></li>
+                                            </ul>
+                                            <li><a class="dropdown-item" href="#">OSHA Training Institute Education
+                                                    Centers</a></li>
+                                            <ul>
+                                                <li><a class="dropdown-item" href="#">Find a Center</a></li>
+                                                <li><a class="dropdown-item" href="#">Search for Classes</a></li>
+                                            </ul>
+                                            <li><a class="dropdown-item" href="#">Susan Harwood Training Grants</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center gap-2 fw-bold" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    NEWS
+                                </a>
+                                <ul class="dropdown-menu d-none  m-0">
+                                    <li class="dropdown-item fw-bolder">News</li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Federal Registers</a></li>
+                                    <li><a class="dropdown-item" href="#">Media Center</a></li>
+                                    <li><a class="dropdown-item" href="#">News Releases</a></li>
+                                    <li><a class="dropdown-item" href="#">QuickTakes Newsletter</a></li>
+                                </ul>
+                            </li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- !--------------Navbar For Small And Medium Screens---------------->
+        <nav class="navbar d-flex d-lg-none">
+            <div class="container d-block  p-0">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="w-100" src="./Images/fbbc8595-61d4-47b6-af7f-870d24eff88a.jpg" alt="Logo">
+                    </a>
+                    <div>
+                        <button class="btn navbar-toggler shadow-none border-0">
+                            <i class="fa-solid fa-bars text-blue" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                aria-label="Toggle navigation"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-start w-100 " tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn text-white shadow-none border-0 ms-auto">
+                            <i class="fa-solid fa-xmark fs-4" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    OSHA
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">About OSHA</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Find an OSHA Office</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">State Plans</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Job Safety and Health Poster</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Freedom of Information Act</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Speaker Requests</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    STANDARDS
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Law and Regulations</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Federal Register</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Open for Comment</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Regulatory Agenda</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Standard Interpretations</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Training Requirements by Standard</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ENFORCEMENT
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">OSHA Enforcement</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Annual Inspection Data</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    TOPICS
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">For Employers</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Worker Rights</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Fall Prevention</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Hazard Communication</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Heat</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Personal Protective Equipment</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Suicide Prevention</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Trenching and Excavation</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Workers Memorial</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    By Sector
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Agriculture</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Construction</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Federal Agencies</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Healthcare</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Maritime</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Oil and Gas</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Warehousing</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Key Topics
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Recordkeeping Requirements and
+                                            Forms</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Safety and Health Programs</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Support After a Loss</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Whistleblower Protections</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    HELP AND RESOURCES
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Data</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Establishment Search</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Fatality Reports</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">File a Complaint</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Publications</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Safety and Health Topics Pages</a>
+                                    </li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Videos</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Compliance Assistance
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Compliance Assistance Specialists</a>
+                                    </li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Consultation Services</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Cooperative Programs</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Small Business Resources</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Training
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Training Requirements and
+                                            Resources</a>
+                                    </li>
+                                    <hr>
+                                    <ul>
+                                        <li><a class="dropdown-item" href="#">Find a Trainer</a></li>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="#">Replace a Card</a></li>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="#">Avoid Card Fraud</a></li>
+                                        <hr>
+                                    </ul>
+                                    <li><a class="dropdown-item" href="#">OSHA Training Institute Education
+                                            Centers</a></li>
+                                    <hr>
+                                    <ul>
+                                        <li><a class="dropdown-item" href="#">Find a Center</a></li>
+                                        <hr>
+                                        <li><a class="dropdown-item" href="#">Search for Classes</a></li>
+                                        <hr>
+                                    </ul>
+                                    <li><a class="dropdown-item" href="#">Susan Harwood Training Grants</a></li>
+                                    <hr>
+                                </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link px-3 " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    NEWS
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="p-4">
+                                    <li><a class="dropdown-item" href="#">Federal Registers</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">Media Center</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">News Releases</a></li>
+                                    <hr>
+                                    <li><a class="dropdown-item" href="#">QuickTakes Newsletter</a></li>
+                                    <hr>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- !-----------------------------------Header End----------------------------->
+    <!-- !-----------------------------------Slider Start--------------------------->
+    <main class="mt-3">
+        <h1 id="site-title">OSHA</h1>
+        <!-- !--------------Slider For Large Screens---------------->
+        <div id="carouselExampleAutoplaying" class="carousel slide d-none d-md-grid container " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="./images/Slider1.jpg" class="d-block img-fluid" alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Registration now open
+                    </a>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="./images/Slider2.jpg" class="d-block img-fluid" alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        New Quick Reference Guide
+                    </a>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="./images/Slider1.jpg" class="d-block img-fluid" alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex gap-2">
+                        <div class="position-relative">
+                            <img src="./images/Slider4.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Learners
+                            </a>
+                        </div>
+                        <div class="position-relative">
+                            <img src="./images/Slider8.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Alumni
+                            </a>
+                        </div>
+                        <div class="position-relative">
+                            <img src="./images/Slider6.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Employers
+                            </a>
+                        </div>
+                        <div class="position-relative">
+                            <img src="./images/Slider7.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Service Leavers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex gap-2 justify-content-between">
+                        <div class="position-relative">
+                            <img src="./images/Slider8.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Prospective Examiners
+                            </a>
+                        </div>
+                        <div class="position-relative">
+                            <img src="./images/Slider7.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Prospective Learning Partners
+                            </a>
+                        </div>
+                        <div class="position-relative">
+                            <img src="./images/Slider7.jpg" class="d-block img-fluid" alt="">
+                            <a href="#" class="slider-title  position-absolute bottom-0 ">
+                                Learning Partners
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative">
+                    <img src="./images/Slider11.jpg" class="d-block img-fluid" alt="...">
+                    <a href="#" class="slider-title position-absolute bottom-0 ">
+                        NEBOSH Verifications
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev opacity-100 d-none d-md-inline-flex" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <i class="bg-cyan d-flex justify-content-center align-items-center fs-1 fa-solid fa-angle-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next opacity-100 d-none d-md-inline-flex" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <i class=" bg-cyan d-flex justify-content-center align-items-center fs-1 fa-solid fa-angle-right "
+                    aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- !--------------Slider For Small Screens---------------->
+        <div id="carouselExampleAutoplaying" class="carousel slide d-grid d-md-none  container p-1 "
+            data-bs-ride="carousel">
+            <div class="carousel-indicators  d-flex d-md-none">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="9"
+                    aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="10"
+                    aria-label="Slide 11"></button>
+            </div>
+            <div class="carousel-inner " style="height: 300px;">
+                <div class="carousel-item active position-relative h-100">
+                    <img src="./images/Slider1.jpg" class="d-block img-fluid h-100  " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Registration now open
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider2.jpg" class="d-block img-fluid h-100 " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        New Quick Reference Guide
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider1.jpg" class="d-block img-fluid h-100 " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider4.jpg" class="d-block img-fluid h-100  " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider8.jpg" class="d-block img-fluid h-100  " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider6.jpg" class="d-block img-fluid h-100 " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider7.jpg" class="d-block img-fluid h-100  " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider8.jpg" class="d-block img-fluid h-100  " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider6.jpg" class="d-block img-fluid h-100  " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider6.jpg" class="d-block img-fluid h-100 " alt="...">
+                    <a href="#" class="slider-title  position-absolute bottom-0 ">
+                        Meet our first NEBOSH Honorary Diploma Recipients
+                    </a>
+                </div>
+                <div class="carousel-item position-relative h-100 ">
+                    <img src="./images/Slider11.jpg" class="d-block img-fluid h-100 " alt="...">
+                    <a href="#" class="slider-title position-absolute bottom-0 ">
+                        NEBOSH Verifications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- !-----------------------------------Slider End----------------------------->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
