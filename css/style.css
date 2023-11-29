@@ -1,6 +1,7 @@
 :root {
     --main-blue: rgb(0, 43, 128);
     --light-blue: rgba(48, 77, 131, 0.801);
+    --secondary-blue: #0383c6;
     --main-cyan: rgb(130, 205, 222);
     --main-font: 'Source Sans 3', sans-serif;
     --secondary-font: 'Merriweather', serif;
@@ -27,12 +28,20 @@ a {
     background-color: var(--main-blue) !important;
 }
 
+.bg-blue-secondary {
+    background-color: var(--secondary-blue);
+}
+
 .text-cyan {
     color: var(--main-cyan) !important;
 }
 
 .text-blue {
     color: var(--main-blue);
+}
+
+.text-blue-secondary {
+    color: var(--secondary-blue);
 }
 
 .main-font {
@@ -42,6 +51,7 @@ a {
 .secondary-font {
     font-family: var(--secondary-font);
 }
+
 #site-title {
     position: absolute;
     width: 1px;
@@ -53,17 +63,91 @@ a {
     white-space: nowrap;
     border-width: 0;
 }
+.fa-circle-arrow-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: var(--secondary-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+.fa-whatsapp{
+    position: fixed;
+    right: 20px ;
+    bottom: 70px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(0, 168, 132);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+}
+
 /* !---------------------------------------Alert Style Start------------------------------------- */
 #offcanvas {
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
     border: 0;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px var(--light-blue);
-    transition: top 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px 5px #00000038;
+    transition: top 2s;
     min-width: 320px;
+
 }
+
+#offcanvas .btn-close:focus {
+    box-shadow: none;
+}
+
+.offcanvas-alert {
+    overflow: hidden;
+}
+
+.alert-img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.alert-img::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: var(--secondary-blue);
+    right: -20px;
+}
+
+.alert-img img {
+    border-radius: 50%;
+}
+
+#offcanvas a {
+    color: var(--secondary-blue) !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#offcanvas a:hover {
+    text-decoration: underline !important;
+}
+
 /* !---------------------------------------Alert Style End-------------------------------------- */
 
 /* !---------------------------------------Header Style Start----------------------------------- */
@@ -220,8 +304,120 @@ a {
 }
 
 /* !---------------------------------------Slider Style End------------------------------------ */
+/* !---------------------------------------Certificates Style Start-----------------------------*/
 
 
+.certificate-img {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem 0;
+    transition: all 0.3s;
+
+}
+
+.certificate-img img {
+    height: 100%;
+}
+
+.certificate-img:hover {
+    scale: 1.2;
+
+}
+
+.main-img {
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--main-cyan);
+}
+
+.img2 img {
+    right: 50px;
+}
+
+.img4 {
+    bottom: -55px;
+}
+
+.img6 img {
+    left: 50px;
+}
+
+/* !---------------------------------------Certificates Style End-------------------------------*/
+
+/* !---------------------------------------News Style Start----------------------------------- */
+.news .col .card {
+    min-height: 420px;
+}
+.news .col .card .card-body a{
+    color: var(--secondary-blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.news .col .card .card-body a:hover{
+    text-decoration: underline !important;
+}
+/* !---------------------------------------News Style End--------------------------------------*/
+
+/* !---------------------------------------Footer Style Start----------------------------------*/
+footer{
+    background-color:rgb(230, 230, 230) ;
+    padding: 1.5rem 0;
+}
+footer .footer-top ul li{
+    position: relative;
+    font-weight: 700;
+}
+footer .footer-top ul li:not(:last-child):after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    right: -10px;
+}
+footer .footer-top ul li a:hover{
+    text-decoration: underline !important;
+}
+.footer-middle{
+    background-color:rgb(249, 249, 249) ;
+}
+.footer-middle a{
+    color: var(--secondary-blue);
+}
+.footer-middle a:hover{
+    text-decoration: underline !important;
+}
+.footer-middle h6{
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.footer-middle p{
+    font-size: 0.82rem;
+}
+.footer-middle-img{
+    width: 100px;
+    height: 100px;
+}
+.footer-middle ul li{
+    margin: 0.5rem 0;
+}
+
+.footer-bottom ul li{
+    width: 40px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-bottom ul li:hover {
+    color: var(--secondary-blue);
+    border:2px solid var(--main-blue);
+}
+/* !---------------------------------------Footer Style End------------------------------------*/
 /* !Media Query For Different Devices   */
 
 @media (min-width:769px) and (max-width:1439px) {
@@ -275,5 +471,6 @@ a {
     .slider-title {
         padding: 2.25rem;
     }
+
 
 }
